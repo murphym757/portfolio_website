@@ -1,0 +1,184 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+ @font-face {
+  font-family: "Dolce Vita";
+  src: url('/assets/Dolce_Vita_Heavy_Bold');
+ }
+
+
+
+
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: white;
+	background-color: #A3717C;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
+h1,
+h2 {
+    margin: 0 0 35px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Dolce Vita","Montserrat",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.brand-heading,
+.intro-text {
+  color: white;
+   text-shadow: 5px 10px 10px #532D3B;
+}
+
+.classy-font {
+  margin: 0 0 35px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+ p {
+     margin: 0 0 25px;
+     font-size: 18px;
+     line-height: 1.5;
+     @media(min-width:768px) {
+         margin: 0 0 35px;
+         font-size: 20px;
+         line-height: 1.6;
+     }
+ }
+
+ .light {
+    font-weight: 400;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(white, 0.3);
+    text-transform: uppercase;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #A3717C;
+    .navbar-toggle {
+        padding: 4px 6px;
+        font-size: 16px;
+        color: white;
+        &:focus,
+        &:active {
+            outline: none;
+        }
+    }
+    .navbar-brand {
+        font-weight: 700;
+        &:focus {
+            outline: none;
+        }
+    }
+    a {
+        color: white;
+    }
+
+.nav {
+    li {
+        a {
+            -webkit-transition: background .3s ease-in-out;
+            -moz-transition: background .3s ease-in-out;
+            transition: background .3s ease-in-out;
+            &:hover {
+                color: rgba(white, 0.8);
+                outline: none;
+                background-color: transparent;
+            }
+            &:focus,
+            &:active {
+                outline: none;
+                background-color: transparent;
+            }
+        }
+        &.active {
+            outline: none;
+            a {
+                background-color: rgba(white, 0.3);
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:768px) {
+    padding: 20px 0;
+    border-bottom: none;
+    letter-spacing: 1px;
+    background: transparent;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+    &.top-nav-collapse {
+        padding: 0;
+        background: #A3717C;
+        border-bottom: 1px solid rgba(white, 0.3);
+    }
+
+}
+}
+
+
+.content-section {
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+
+.contact-section {
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+
+.bullets {
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 1.0;
+}
+
+.fa-envelope,
+.fa-mobile,
+.fa-home {
+  color: #532D3B;
+}
+
+footer {
+    padding: 50px 0;
+    p {
+        margin: 0;
+    }
+}
