@@ -1,24 +1,3 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This is my portfolio website. I used various concepts and merged them together to create this beautiful website. The website design is a scrollspy-like concept. I chose this design based on its simple and straight-to-the-point flow. Its heavier on sass (css) then anything else. That being said, it does contain elements of HTML5 and JavaScript. All of which, is being tied together with Ruby on Rails. 
