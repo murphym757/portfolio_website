@@ -19,13 +19,12 @@
  @import "bootstrap";
  @import "font-awesome-sprockets";
  @import "font-awesome";
+
+
  @font-face {
   font-family: "Dolce Vita";
-  src: url('/assets/Dolce_Vita_Heavy_Bold');
+  src: font-url('/assets/Dolce_Vita_Heavy_Bold');
  }
-
-
-
 
 
 body {
