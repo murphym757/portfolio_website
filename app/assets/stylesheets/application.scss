@@ -22,8 +22,9 @@
 
 
  @font-face {
-  font-family: "Dolce Vita";
-  src: font-url('/assets/Dolce_Vita_Heavy_Bold');
+  font-family: 'Dolce Vita';
+  src: font-url('Dolce_Vita_Heavy_Bold.ttf');
+  src: font-url('Dolce_Vita_Heavy_Bold.ttf?iefix') format('truetype');
  }
 
 
