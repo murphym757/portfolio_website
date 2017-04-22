@@ -1,23 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Maurice Murphy">
-    <link rel="stylesheet" href="app/assets/stylesheets/font-awesome.scss">
-
-</head>
-
   <header class="intro">
       <div class="intro-body">
           <div class="container">
               <div class="row">
-                  <div class="col-md-8 col-md-offset-2">
-                      <h1 class="brand-heading">Maurice Murphy</h1>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="brand-heading"><%= image_tag("Personal  Logo.svg", alt: "logo-img", height: 720, width: 720) %></div>
                       <p class="intro-text">Welcome to my portfolio.
                           <br>Please scroll down the page to get a better understanding of who I am. Thanks for coming.</p>
                       <a href="#intro" class="btn btn-circle page-scroll">
@@ -29,12 +15,11 @@
       </div>
   </header>
 
-<%= render 'intro/intro' %>
-<%= render 'projects/content' %>
-<%= render 'contact/contact' %>
-<%= yield %>
-</body>
 
+  <%= render 'intro/intro' %>
+  <%= render 'projects/content' %>
+  <%= render 'contact/contact' %>
+  <%= yield %>
 
 
 
