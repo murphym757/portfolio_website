@@ -3,35 +3,16 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="brand-heading"><%= image_tag("Personal  Logo.svg", alt: "logo-img", height: 720, width: 720) %></div>
+          <div class="brand-heading animated fadeInLeft"><%= image_tag("Personal  Logo.svg", alt: "logo-img", height: 720, width: 720) %></div>
+        </div>
           <p class="intro-text">Welcome to my portfolio.
-              <br>Please scroll down the page to get a better understanding of who I am.
+              <br>Please scroll down this page (or use the navigation bar)<br> to get a better understanding of who I am.
               <br>Thanks for coming.</p>
-          <a href="#intro" class="btn btn-circle page-scroll">
-              <i class="fa fa-arrow-circle-o-down animated fa-5x"></i>
-          </a>
         </div>
       </div>
     </div>
-  </div>
 </header>
 
-
-  <%= render 'intro/intro' %>
-  <%= render 'projects/content' %>
-  <%= render 'contact/contact' %>
-  <%= yield %>
-
-
-
-<!-- jQuery -->
-<script src="app/assets/javascripts/jquery.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="app/assets/javascripts/bootstrap.js"></script>
-
-<!-- Theme JavaScript -->
-<script src="app/assets/javascripts/grayscale.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<%= render 'intro/intro' %>
+<%= render 'contact/contact' %>
+<%= yield %>

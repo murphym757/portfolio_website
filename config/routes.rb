@@ -1,9 +1,17 @@
 Rails.application.routes.draw do
+  match "/resume", to: "resume#index", :via =>'get'
+
   get 'contact/contact'
 
   get 'intro/intro'
 
-  get 'projects/content'
+  match "/projects", to: "projects#index", :via =>'get'
+
+  get 'projects/segaparadise'
+  get 'projects/portfolio'
+  get 'projects/baysidevinyl'
+  get 'projects/bvthemegenerator'
+  get 'projects/breakoutjsgame'
 
   get 'home/index'
 

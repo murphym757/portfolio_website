@@ -13,7 +13,6 @@
 
     <title>Maurice Murphy Portfolio</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -21,5 +20,8 @@
   <body>
     <%= render 'layouts/header' %>
     <%= yield %>
+    <script src="app/assets/javascripts/jquery.js"></script>
+    <script src="app/assets/javascripts/bootstrap.js"></script>
+    <script src="app/assets/javascripts/grayscale.js"></script>
   </body>
 </html>

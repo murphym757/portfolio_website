@@ -13,51 +13,55 @@
  *= require_tree .
  *= require_self
  */
-
- // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
- @import "bootstrap-sprockets";
- @import "bootstrap";
- @import "font-awesome-sprockets";
- @import "font-awesome";
-
-
- @font-face {
-  font-family: 'Dolce Vita';
-  src: font-url('Dolce_Vita_Heavy_Bold.ttf');
-  src: font-url('Dolce_Vita_Heavy_Bold.ttf?iefix') format('truetype');
- }
-
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@font-face {
+  font-family: 'Roboto-Light';
+  src: font-url('Roboto-Light.ttf');
+  src: font-url('Roboto-Light.ttf?iefix') format('truetype');
+  font-family: 'Roboto-Regular';
+  src: font-url('Roboto-Regular.ttf');
+  src: font-url('Roboto-Regular.ttf?iefix') format('truetype');
+  font-family: 'Roboto-Medium';
+  src: font-url('Roboto-Medium.ttf');
+  src: font-url('Roboto-Medium.ttf?iefix') format('truetype');
+}
 
 body {
   width: 100%;
   height: 100%;
-  font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Roboto-Light',sans-serif;
   color: white;
-	background-color: #A3717C;
+  background-color: #A3717C;
 }
 
 html {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-
 
 h1,
-h2 {
-    margin: 0 0 35px;
-    color: white;
-    text-transform: uppercase;
-    font-family: "Dolce Vita","Montserrat",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
+h2,
+h3 {
+  margin: 0 0 35px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Roboto-Medium",sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-.brand-heading,
+.project-title {
+  color: #542D3B;
+}
+
 .intro-text {
   color: white;
-   text-shadow: 5px 10px 10px #532D3B;
+  font-family: "Roboto-Medium";
+  text-shadow: 5px 10px 10px #532D3B;
 }
-
 
 .classy-font {
   margin: 0 0 35px;
@@ -68,96 +72,103 @@ h2 {
   letter-spacing: 1px;
 }
 
- p {
-     margin: 0 0 25px;
-     font-size: 18px;
-     line-height: 1.5;
- }
+p {
+  margin: 0 0 25px;
+  font-size: 18px;
+  line-height: 1.5;
+}
 
- .light {
-    font-weight: 400;
+.light {
+  font-weight: 400;
 }
 
 .navbar-custom {
-    margin-bottom: 0;
-    border-bottom: 1px solid rgba(white, 0.3);
-    text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #A3717C;
-    .navbar-toggle {
-        padding: 4px 6px;
-        font-size: 16px;
-        color: white;
-        &:focus,
-        &:active {
-            outline: none;
-        }
-    }
-    .navbar-brand {
-        font-weight: 700;
-        &:focus {
-            outline: none;
-        }
-    }
-    a {
-        color: white;
-    }
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(white, 0.3);
+  text-transform: uppercase;
+  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: #A3717C;
 
-.nav {
+  .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: white;
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .navbar-brand {
+    font-weight: 700;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  a {
+    color: white;
+  }
+
+  .nav {
     li {
-        a {
-            -webkit-transition: background .3s ease-in-out;
-            -moz-transition: background .3s ease-in-out;
-            transition: background .3s ease-in-out;
-            &:hover {
-                color: rgba(white, 0.8);
-                outline: none;
-                background-color: transparent;
-            }
-            &:focus,
-            &:active {
-                outline: none;
-                background-color: transparent;
-            }
-        }
-        &.active {
-            outline: none;
-            a {
-                background-color: rgba(white, 0.3);
-                &:hover {
-                    color: white;
-                }
-            }
-        }
-    }
-}
+      a {
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        transition: background 0.3s ease-in-out;
 
-@media(min-width:768px) {
-    padding: 20px 0;
+        &:hover {
+          color: rgba(white, 0.8);
+          outline: none;
+          background-color: transparent;
+        }
+
+        &:active,
+        &:focus {
+          outline: none;
+          background-color: transparent;
+        }
+      }
+
+      &.active {
+        outline: none;
+
+        a {
+          background-color: rgba(white, 0.3);
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  @media(min-width:768px) {
     border-bottom: none;
     letter-spacing: 1px;
     background: transparent;
-    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-    transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -webkit-transition: background 0.5s ease-in-out,padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out,padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out,padding 0.5s ease-in-out;
+
     &.top-nav-collapse {
-        padding: 0;
-        background: #A3717C;
-        border-bottom: 1px solid rgba(white, 0.3);
+      padding: 0;
+      background: #A3717C;
+      border-bottom: 1px solid rgba(white, 0.3);
     }
-
-}
-}
-
-
-.content-section {
-   padding-top: 100px;
-   padding-bottom: 100px;
+  }
 }
 
-.contact-section {
-   padding-top: 100px;
-   padding-bottom: 100px;
+.contact-section,
+.content-section,
+.intro-section {
+  padding-top: 100px;
+}
+
+.propject-heading {
+  padding-bottom: 700px;
 }
 
 .bullets {
@@ -167,7 +178,104 @@ h2 {
 }
 
 .fa-envelope,
-.fa-mobile,
-.fa-home {
+.fa-home,
+.fa-mobile {
   color: #532D3B;
 }
+/* Bootstrap Buttons */
+.btn-custom {
+  color: #FFFFFF;
+  background-color: #7C4751;
+  border-color: #FFFFFF;
+}
+
+.btn-custom.active,
+.btn-custom:active,
+.btn-custom:focus,
+.btn-custom:hover,
+.open .dropdown-toggle.btn-custom {
+  color: #FFFFFF;
+  background-color: #A3717C;
+  border-color: #FFFFFF;
+}
+
+.btn-custom.active,
+.btn-custom:active,
+.open .dropdown-toggle.btn-custom {
+  background-image: none;
+}
+
+.btn-custom.disabled,
+.btn-custom.disabled.active,
+.btn-custom.disabled:active,
+.btn-custom.disabled:focus,
+.btn-custom.disabled:hover,
+.btn-custom[disabled],
+.btn-custom[disabled].active,
+.btn-custom[disabled]:active,
+.btn-custom[disabled]:focus,
+.btn-custom[disabled]:hover,
+fieldset[disabled] .btn-custom,
+fieldset[disabled] .btn-custom.active,
+fieldset[disabled] .btn-custom:active,
+fieldset[disabled] .btn-custom:focus,
+fieldset[disabled] .btn-custom:hover {
+  background-color: #7C4751;
+  border-color: #FFFFFF;
+}
+
+.btn-custom .badge {
+  color: #7C4751;
+  background-color: #FFFFFF;
+}
+/*-------------------------------------------------*/
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+/* Small devices (phones) */
+@media (min-width: 300px) and (max-width: 667px) and (orientation: portrait) {
+  .brand-heading {
+    padding-top: 90px;
+  }
+
+  .intro-section {
+    padding-top: 230px;
+  }
+
+  .card-text {
+    font-size: 12px;
+  }
+}
+@media (min-width: 300px) and (max-width: 667px) and (orientation: landscape) {}
+/* Small devices (larger phones) */
+@media (min-width: 668px) and (max-width: 767px) and (orientation: portrait) {
+  .intro-section {
+    padding-top: 100px;
+  }
+}
+@media (min-width: 668px) and (max-width: 767px) and (orientation: landscape) {}
+/* ---------------------------------------------------- */
+/* Medium devices (tablets, 768px to 1024px) */
+/* Ipad navbar font sizes */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+  .navbar-brand {
+    font-size: 12px;
+  }
+
+  .page-scroll {
+    font-size: 12px;
+  }
+}
+/* ---------------------- */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+/* ---------------------------------------------------- */
+/* Large devices (Laptops (and large resolution tablets), 1025px to 1439px) */
+@media (min-width: 1025px) and (max-width: 1439px) and (orientation: portrait) {}
+@media (min-width: 1025px) and (max-width: 1439px) and (orientation: landscape) {}
+/* ---------------------------------------------------- */
+/* Large devices (Computers, 1440px to 1979px) */
+@media (min-width: 1440px) and (max-width: 1979px) and (orientation: landscape) {}
+/* ---------------------------------------------------- */
+/* Extra Large devices (Computers, 1980px and up) */
+@media (min-width: 1980px) and (max-width: 3840px) and (orientation: landscape) {}
+/* ---------------------------------------------------- */

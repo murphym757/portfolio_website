@@ -1,0 +1,33 @@
+<section id="project" class="container content-section text-center">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2 class="classy-font">
+        Bayside Vinyl
+      </h2>
+
+      <h3 class="project-title">Developer & Designer</h3>
+      <p class="project-description">A business plan dedicated to a personal project of mine. The user has login abilities. Once the user creates an account, they will have the ability to upload mp3 files to be played with the custom MP3 player. Each user
+        (once logged in) has CRUD abilities for any of their contributed content.</p>
+      <br>
+      <p class="project-contents">Built with Ruby on Rails, Bootstrap, HTML5, CSS3, JQuery, Devise, Amazon S3, Paperclip</p>
+    </p>
+    <br>
+    <div class="col-xs-12">
+      <div class="project-image"><%= image_tag("bv-image.png", alt: "project-img", height: 720, width: 720) %></div>
+      <br>
+      <div class="project-image"><%= image_tag("bv-image2.png", alt: "project-img", height: 720, width: 720) %></div>
+      <br>
+      <div class="project-image"><%= image_tag("bv-image3.png", alt: "project-img", height: 720, width: 720) %></div>
+      <br>
+      <div class="project-image"><%= image_tag("bv-image4.png", alt: "project-img", height: 720, width: 720) %></div>
+    </div>
+    <br>
+  </div>
+</div>
+<footer class="footer">
+  <span class="text-muted">
+    <a href="https://github.com/murphym757/baysidevinyl" target="_blank"><%= image_tag("github.png", alt: "png-img", height: 100, width: 180) %></a>
+    <a href="http://baysidevinyl.herokuapp.com/" target="_blank"><%= image_tag("BV logo.png", alt: "png-img", height: 60, width: 90) %></a><br>
+    <a class="btn btn-custom classy-font" href="/projects" role="button">Return to Projects</a>
+  </footer>
+</section>
