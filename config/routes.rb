@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'projects/baysidevinyl'
   get 'projects/bvthemegenerator'
   get 'projects/breakoutjsgame'
+  get 'projects/crossfaderblog'
 
   get 'home/index'
 
