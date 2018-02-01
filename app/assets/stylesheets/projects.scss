@@ -182,6 +182,14 @@ figure.effect-bubba:hover p {
 	transform: translate3d(0,0,0);
 }
 
+.effect-bubba:hover {
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 0.5s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-iteration-count: infinite; }
+
 @media screen and (max-width: 50em) {
 	.content {
 		padding: 0 10px;
