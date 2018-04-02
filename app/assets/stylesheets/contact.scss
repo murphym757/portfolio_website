@@ -1,23 +1,30 @@
 // Place all the styles related to the Contact controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 /* unvisited link */
-a:link {
-   color: white;
+
+.email-link:link,
+.phone-link:link {
+    color: white;
 }
 
 /* visited link */
-a:visited {
-   color: white;
+
+.email-link:visited,
+.phone-link:visited {
+    color: #492834;
 }
 
 /* mouse over link */
-a:hover {
-   color: white;
+
+.email-link:hover,
+.phone-link:hover {
+    color: #492834;
 }
 
 /* selected link */
-a:active {
-   color: white;
+
+.email-link:active,
+.phone-link:active {
+    color: white;
 }
