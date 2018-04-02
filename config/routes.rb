@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get 'projects/breakoutjsgame'
   get 'projects/crossfaderblog'
   get 'projects/bvblog'
+  get 'projects/baysidevaporwave'
 
   get 'home/index'
 
